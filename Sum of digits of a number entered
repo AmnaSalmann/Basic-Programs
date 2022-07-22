@@ -6,12 +6,12 @@ public static void main(String[] args) {
     int M=0;
     Scanner in= new Scanner(System.in);
     System.out.println("Please Enter a number (more than 1 digit)"); //e.g: user enters 24
-    N= in.next();
+    N= in.nextInt();
     for(int i=0; N!=0; i++){
     M= N%10; //this will give the last digit of the number
     sum=sum+M;
     N=N/10;//to get the next number (we move from right to left)
     }
-
+ System.out.println("The sum of numbers is: " +sum);
 }
 }
